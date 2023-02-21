@@ -102,6 +102,10 @@ main {
   background-color: #1A1A1A;
 }
 
+h2, h3, h4 {
+  text-transform: capitalize;
+}
+
 .header__inner {
   display: flex;
   align-items: center;
@@ -278,6 +282,7 @@ main {
   font-size: 30px;
   line-height: 60px;
   letter-spacing: 0.2em;
+  text-transform: capitalize;
   margin-bottom: 61px;
   text-align: center;
   background-image: url(../images/about.png);
@@ -310,4 +315,82 @@ main {
 
 .healthy-eating__img-right {
   margin-right: 66px;
+}
+
+.work__inner {
+  margin-bottom: 91px;
+}
+
+.work__title {
+  font-size: 36px;
+  line-height: 90px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  background: url(../images/work.png) no-repeat center;
+  margin-bottom: 59px;
+}
+.work__title::after {
+  content: "";
+  display: block;
+  width: 56px;
+  border-bottom: 2px solid #34C759;
+  top: 20px;
+  left: 48%;
+  position: relative;
+}
+
+.work__process {
+  display: flex;
+  gap: 0 30px;
+}
+
+.cart-process {
+  width: 255px;
+  min-height: 182px;
+  background: #252525;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  padding: 24px;
+  padding-bottom: 0;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.work__cart-1 {
+  background-color: #34C759;
+  color: #191919;
+}
+.work__cart-1 h3 {
+  color: #191919;
+}
+.work__cart-1 h3::after {
+  content: "";
+  display: block;
+  width: 56px;
+  border-bottom: 2px solid #191919;
+  top: 15px;
+  position: relative;
+}
+.work__cart-1 p {
+  width: 200px;
+}
+
+.cart-process__title {
+  font-size: 22px;
+  line-height: 26px;
+  padding-bottom: 10px;
+  margin-bottom: 24px;
+  color: #fff;
+}
+.cart-process__title::after {
+  content: "";
+  display: block;
+  width: 56px;
+  border-bottom: 2px solid #34C759;
+  top: 15px;
+  position: relative;
+}
+
+.cart-process__text {
+  font-size: 13px;
+  line-height: 18px;
 }
