@@ -1,0 +1,260 @@
+.HS__cart a, .header__link-contacts, .header__link-chefs, .header__link-recipes, body {
+  color: #fff;
+}
+
+.header__link-menu {
+  color: #34C759;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Helvetica NeueCyr Thin"), local("HelveticaNeueCyr-Thin"), url("../font/HelveticaNeueCyr-Thin.woff2") format("woff2"), url("../font/HelveticaNeueCyr-Thin.woff") format("woff");
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Helvetica NeueCyr Bold"), local("HelveticaNeueCyr-Bold"), url("../font/HelveticaNeueCyr-Bold.woff2") format("woff2"), url("../font/HelveticaNeueCyr-Bold.woff") format("woff");
+}
+.container {
+  width: 1110px;
+  margin: auto;
+}
+@media (max-width: 769px) {
+  .container {
+    width: 740px;
+  }
+}
+@media (max-width: 321px) {
+  .container {
+    width: 300px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 33px 0;
+  position: absolute;
+  top: 0;
+}
+@media (max-width: 321px) {
+  .header__inner {
+    display: block;
+  }
+}
+
+.header__logo {
+  margin-right: 590px;
+}
+@media (max-width: 769px) {
+  .header__logo {
+    margin-right: 205px;
+  }
+}
+@media (max-width: 321px) {
+  .header__logo {
+    margin-left: 10%;
+    margin-bottom: 20px;
+  }
+}
+
+.header__nav {
+  display: flex;
+}
+
+.header__link-menu {
+  margin-right: 45px;
+}
+@media (max-width: 321px) {
+  .header__link-menu {
+    margin-right: 25px;
+  }
+}
+
+.header__link-recipes {
+  margin-right: 55px;
+}
+@media (max-width: 321px) {
+  .header__link-recipes {
+    margin-right: 25px;
+  }
+}
+
+.header__link-chefs {
+  margin-right: 36px;
+}
+@media (max-width: 321px) {
+  .header__link-chefs {
+    margin-right: 25px;
+  }
+}
+
+.delivery {
+  background: url(../images/background-top.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.delivery {
+  padding-top: 171px;
+  padding-bottom: 401px;
+}
+
+.delivery__title {
+  font-size: 72px;
+  line-height: 84px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.delivery__title span {
+  font-weight: 700;
+}
+@media (max-width: 321px) {
+  .delivery__title {
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+
+.delivery__text {
+  text-align: center;
+  line-height: 26px;
+  opacity: 0.7;
+  max-width: 550px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+@media (max-width: 325px) {
+  .delivery__text {
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 25px;
+  }
+}
+
+.button {
+  background-color: #34C759;
+  color: #1A1A1A;
+  border: none;
+  border-radius: 43px;
+  cursor: pointer;
+}
+
+.delivery__button {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  width: 220px;
+  height: 72px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 70px;
+}
+@media (max-width: 325px) {
+  .delivery__button {
+    width: 160px;
+    height: 39px;
+    font-size: 15px;
+    margin-bottom: 45px;
+  }
+}
+
+.HS {
+  display: flex;
+  justify-content: center;
+  gap: 0 90px;
+}
+@media (max-width: 325px) {
+  .HS {
+    display: block;
+  }
+}
+
+.HS__cart {
+  flex-basis: 245px;
+  text-align: center;
+}
+.HS__cart img {
+  margin-bottom: 16px;
+}
+.HS__cart a {
+  display: block;
+}
+.HS__cart p {
+  opacity: 0.5;
+  font-size: 14px;
+}
