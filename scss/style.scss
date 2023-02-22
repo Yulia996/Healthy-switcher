@@ -233,6 +233,11 @@ h2, h3, h4 {
     background-color: #252525;
     padding: 105px 64px 90px;
     margin-bottom: 51px;
+
+    @media (max-width:769px) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
 
 .healthy-eating__title {
@@ -266,14 +271,42 @@ h2, h3, h4 {
 
 .arrow-left {
     margin-right: 61px;
+
+    @media (max-width:769px) {
+        display: none;
+    }
+}
+
+.arrow-right {
+    @media (max-width:769px) {
+        display: none;
+    }
 }
 
 .healthy-eating__img-left {
     margin-right: 34px;
+
+    @media (max-width:769px) {
+        width: 30%;
+    }
+
+    @media (max-width:325px) {
+        width: 50%;
+        margin-right: 10px;
+    }
 }
 
 .healthy-eating__img-right {
     margin-right: 66px;
+
+    @media (max-width:769px) {
+        width: 30%;
+    }
+
+    @media (max-width:325px) {
+        width: 50%;
+    }
+    
 }
 
 .work__inner {
@@ -298,13 +331,20 @@ h2, h3, h4 {
         position: relative;
        }
         
-
+       @media (max-width:325px) {
+        font-size: 30px;
+       }
   
 }
 
 .work__process {
     display: flex;
     gap: 0 30px;
+
+    @media (max-width:769px) {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
 }
 
 
@@ -318,7 +358,12 @@ h2, h3, h4 {
     padding: 24px;
     padding-bottom: 0;
     color: rgba(255, 255, 255, 0.5);
+
+    @media (max-width:325px) {
+        width: 65%;
+    }
 }
+
 
 .work__cart-1 {
     background-color: $colorAccent;
@@ -340,6 +385,10 @@ h2, h3, h4 {
 
     p {
         width: 200px;
+    }
+
+    @media (max-width:325px) {
+        width: auto;
     }
 }
 
