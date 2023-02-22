@@ -8,6 +8,16 @@ $colorAccent:#34C759;
     color: #34C759;
 }
 
+@mixin Button{
+    background-color: $colorAccent;
+    color: #1A1A1A;
+    border: none;
+    border-radius: 43px;
+    cursor: pointer;
+}
+
+
+
 @media (max-width:769px) {
 
 }

@@ -170,11 +170,7 @@ h2, h3, h4 {
 }
 
 .button {
-    background-color: $colorAccent;
-    color: #1A1A1A;
-    border: none;
-    border-radius: 43px;
-    cursor: pointer;
+    @include Button;
 }
 
 .delivery__button {
@@ -329,11 +325,11 @@ h2, h3, h4 {
         top: 20px;
         left: 48%;
         position: relative;
-       }
+    }
         
-       @media (max-width:325px) {
+    @media (max-width:325px) {
         font-size: 30px;
-       }
+    }
   
 }
 
@@ -417,3 +413,124 @@ h2, h3, h4 {
     font-size: 13px;
     line-height: 18px;
 }
+
+.dishes__inner {
+    margin-bottom: 120px;
+}
+
+
+.dishes__title {
+    font-size: 39px;
+    line-height: 90px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    background: url(../images/dishes.png) no-repeat center;
+    margin-bottom: 90px;
+
+    &::after {
+        content: "";
+        display: block;
+        width:56px;
+        border-bottom: 2px solid $colorAccent;
+        top: 28px;
+        left: 48%;
+        position: relative;
+    }
+
+    @media (max-width:325px) {
+        font-size: 25px;
+    }
+
+      
+}
+
+.dishes__catalog {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.dishes__cart {
+    max-width: 350px;
+    background: #252525;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+
+    @media (max-width:325px) {
+        max-width: 280px;
+        height: auto;
+    }
+}
+
+.dishes__img {
+    max-width: 350px;
+    max-height: 260px ;
+    margin-bottom: 29px;
+
+    @media (max-width:325px) {
+        max-width: 280px;
+        height: auto;
+    }
+
+}
+
+.dishes__cart-content {
+    padding: 0 30px 24px;
+
+}
+
+.dishes__cart-title {
+    font-size: 30px;
+    line-height: 32px;
+    color: #D9D9D9;
+
+    @media (max-width:325px) {
+        font-size: 20px;
+    }
+
+}
+   
+
+.dishes__add {
+    color: #A4A8B2;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 20px;
+
+}
+
+.dishes__choice {
+    font-size: 13px;
+    line-height: 18px;
+    color: #85878C;
+    margin-bottom: 20px;
+}
+
+.dishes__cart-bottom {
+    display: flex;
+    align-items: center;
+}
+
+.dishes__rating {
+    margin-right: 41px;
+}
+
+.dishes__button {
+    font-size: 10px;
+    line-height: 40px;
+    letter-spacing: 0.2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100px;
+    border-radius: 43px;
+    border: 2px solid #303030;
+    background: #262626;
+    color: rgba(255, 255, 255, 0.5);
+
+}
+
+.button {
+    @include Button;
+}
+
