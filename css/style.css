@@ -571,3 +571,68 @@ h2, h3, h4 {
   border-radius: 43px;
   cursor: pointer;
 }
+
+.chefs__inner {
+  margin-bottom: 120px;
+}
+
+.chefs__title {
+  font-size: 36px;
+  line-height: 90px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  margin-bottom: 60px;
+  background: url(../images/chefs.png) no-repeat center;
+}
+@media (max-width: 325px) {
+  .chefs__title {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+
+.chefs__list {
+  display: flex;
+}
+@media (max-width: 325px) {
+  .chefs__list {
+    display: block;
+  }
+}
+
+.chefs__item {
+  margin-right: 30px;
+}
+.chefs__item:last-child {
+  margin-right: 0;
+}
+@media (max-width: 325px) {
+  .chefs__item {
+    margin-bottom: 20px;
+  }
+}
+
+.cart-chefs__top {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.cart-chefs__avatar {
+  margin-right: 24px;
+}
+
+.cart-chefs__name {
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 6px;
+}
+
+.cart-chefs__level {
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.cart-chefs__img {
+  width: 100%;
+}
